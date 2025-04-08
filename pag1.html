@@ -1,5 +1,6 @@
 <html>
 <head>
+<meta charset ="utf-8">
 <link rel="stylesheet" type="text/css" href="index_style.css">
 </head>
 <body>
@@ -10,7 +11,7 @@
 <ul id = "links">
 <li><a href = "https://www.google.com/" target = "_blank"> Visitar Google </a></li>
 <li><a href = "https://es.wikipedia.org/wiki/Wikipedia:Portada" target = "_blank"> Visitar Wikipedia </a></li>
-<li><a href = > Ir a la seleccion del formulario de esta pagina </a></li>
+<li><a href ="#formulario" > Ir a la seleccion del formulario de esta pagina </a></li>
 </ul>
 </div>
 
@@ -22,5 +23,73 @@
 <hr>    
 
 </div>
+<section id="formulario">
+<div>
+	<h2>Campos de Entrada</h2>
+	Pueba llenar este formulario:
+	<br><br>
+	</div>
+	<form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre"> 	<br><br>
+
+	<label for="correo electrónico">Correo electrónico:</label>
+        <input type="text" id="correo electrónico" name="correo electrónico" 	placeholder="Ingresa tu correo electrónico"><br><br>
+        
+	<label for="contraseña">Contraseña:</label>
+        <input type="text" id="contraseña" name="contraseña" placeholder="Ingresa tu contraseña"><br><br>
+
+	<label for="edad">Edad:</label>
+        <input type="text" id="edad" name="edad" placeholder="Ingresa tu edad"><br><br>
+
+	<label for="fecha-nacimiento">Fecha de nacimiento:</label>
+        <input type="date" id="fecha-nacimiento" name="fecha-nacimiento">
+        <br><br>
+
+	Elige tu fruta favorita: <br><br>
+	<span>
+    	<div class="opcion" style="display: inline-block; margin-right: 10px;">
+        <input type="radio" id="manzana" name="fruta" value="manzana">
+        <label for="manzana">Manzana</label>
+    	</div>
+    	<div class="opcion" style="display: inline-block; margin-right: 10px;">
+        <input type="radio" id="banana" name="fruta" value="banana">
+        <label for="banana">Banana</label>
+    	</div>
+    	<div class="opcion" style="display: inline-block;">
+        <input type="radio" id="naranja" name="fruta" value="naranja">
+        <label for="naranja">Naranja</label>
+    	</div>
+	</span>
+	<br><br>
+
+	Selecciona tus pasatiempos: 
+	<br><br>
+	<span>
+	<div class="opcion" style="display: inline-block; margin-right: 10px;">
+        <input type="checkbox" id="leer" name="pasatiempo" value="leer">
+        <label for="leer">Leer</label>
+    	</div>
+    	<div class="opcion" style="display: inline-block; margin-right: 10px;">
+        <input type="checkbox" id="deportes" name="pasatiempo" value="deportes">
+        <label for="deportes">Deportes</label>
+    	</div>
+    	<div class="opcion" style="display: inline-block;">
+        <input type="checkbox" id="música" name="pasatiempo" value="música">
+        <label for="música">Música</label>
+    	</div>
+	</span>
+	<br><br>
+	
+	Subir un archivo:
+	<input type="submit" value="Choose file">
+	No file choosen
+
+	<br><br>
+	<input type="submit" value="Enviar formulario">
+    	</form>
+</section>
+
 </body>
 </html>
+
